@@ -39,3 +39,5 @@ El código HTML de tu pagína, debe estar dentro de un contenedor. En este ejemp
 </body>
 </html>
 ```
+
+Este código está pensando para que trabaje bajo la metodología Mobile First, por lo tanto deberás ajustar tu hoja de estilos para que funcione correctamente en las diferentes resoluciones, de acuerdo a la planeación de tu proyecto. 
