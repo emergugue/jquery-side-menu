@@ -1,16 +1,18 @@
 # Menú lateral con jQuery
-Pequeño código en jQuery para crear menús laterales en móviles
+Pequeño código en jQuery para crear menús laterales de un sólo nivel en móviles
 
 ## Requerimientos de uso
 Para que funcione correctamente, hay que tener en cuenta:
 
-El contenedor del menú, debe tener las siguientes propiedades CSS: 
+El menú (en este ejemplo es #primary-menu), debe tener las siguientes propiedades CSS: 
 ```css
-position: fixed;
-width: 60%; /*Variable, dependiendo de qué tanto espacio se desea que ocupe el menú en la pantalla*/
-right: -60%; /*Depende del width*/
-z-index: 3;
-height: 100vh;
+#primary-menu{
+	position: fixed;
+	width: 60%; /*Variable, dependiendo de qué tanto espacio se desea que ocupe el menú en la pantalla*/
+	right: -60%; /*Depende del width*/
+	z-index: 3;
+	height: 100vh;
+}
 ```
 
 En la función hideMenu(), se debe cambiar el valor de la propiedad "right", según el ancho del menú configurado en el CSS
@@ -34,7 +36,20 @@ El código HTML de tu pagína, debe estar dentro de un contenedor. En este ejemp
 </head>
 <body>
 	<div id="page">
-		<!-- Tu código HTML -->
+		<header>
+			<button class="menu-toggle">Ver menú</button>
+			<nav>
+				<ul class="primary-menu">
+					<li><a href="#">Inicio</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="content">
+			<!-- El HTML de tu contenido -->
+		</div>
+		<footer>
+			<!-- El HTML de tu footer -->
+		</footer>
 	</div>
 </body>
 </html>
