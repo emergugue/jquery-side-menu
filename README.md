@@ -34,7 +34,7 @@ El código HTML de tu pagína, debe estar dentro de un contenedor. En este ejemp
 </head>
 <body>
 	<div id="page">
-		
+		<!-- Tu código HTML -->
 	</div>
 </body>
 </html>
