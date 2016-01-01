@@ -1,7 +1,7 @@
 # Menú lateral con jQuery
 Pequeño código en jQuery para crear menús laterales en móviles
 
-#Requerimientos de uso
+## Requerimientos de uso
 Para que funcione correctamente, hay que tener en cuenta:
 
 El contenedor del menú, debe tener las siguientes propiedades CSS: 
